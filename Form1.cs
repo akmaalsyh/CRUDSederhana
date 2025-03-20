@@ -130,7 +130,9 @@ namespace CRUDSederhana
                                 {
                                     MessageBox.Show("Data berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     LoadData();
+                                    ClearForm(); // Auto Clear setelah hapus data
                                 }
+                            }
                         }
                     }
                 }
