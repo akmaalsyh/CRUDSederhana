@@ -36,12 +36,13 @@
             this.txtNIM = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // NIM
             // 
             this.NIM.AutoSize = true;
-            this.NIM.Location = new System.Drawing.Point(87, 54);
+            this.NIM.Location = new System.Drawing.Point(87, 57);
             this.NIM.Name = "NIM";
             this.NIM.Size = new System.Drawing.Size(31, 16);
             this.NIM.TabIndex = 0;
@@ -51,7 +52,7 @@
             // Nama
             // 
             this.Nama.AutoSize = true;
-            this.Nama.Location = new System.Drawing.Point(87, 80);
+            this.Nama.Location = new System.Drawing.Point(87, 85);
             this.Nama.Name = "Nama";
             this.Nama.Size = new System.Drawing.Size(44, 16);
             this.Nama.TabIndex = 1;
@@ -60,7 +61,7 @@
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(87, 105);
+            this.Email.Location = new System.Drawing.Point(87, 113);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(41, 16);
             this.Email.TabIndex = 2;
@@ -69,7 +70,7 @@
             // Telepon
             // 
             this.Telepon.AutoSize = true;
-            this.Telepon.Location = new System.Drawing.Point(87, 130);
+            this.Telepon.Location = new System.Drawing.Point(87, 140);
             this.Telepon.Name = "Telepon";
             this.Telepon.Size = new System.Drawing.Size(58, 16);
             this.Telepon.TabIndex = 3;
@@ -78,7 +79,7 @@
             // Alamat
             // 
             this.Alamat.AutoSize = true;
-            this.Alamat.Location = new System.Drawing.Point(87, 156);
+            this.Alamat.Location = new System.Drawing.Point(87, 166);
             this.Alamat.Name = "Alamat";
             this.Alamat.Size = new System.Drawing.Size(49, 16);
             this.Alamat.TabIndex = 4;
@@ -86,30 +87,38 @@
             // 
             // txtNIM
             // 
-            this.txtNIM.Location = new System.Drawing.Point(178, 54);
+            this.txtNIM.Location = new System.Drawing.Point(153, 54);
             this.txtNIM.Name = "txtNIM";
-            this.txtNIM.Size = new System.Drawing.Size(279, 22);
+            this.txtNIM.Size = new System.Drawing.Size(304, 22);
             this.txtNIM.TabIndex = 5;
             // 
             // txtNama
             // 
-            this.txtNama.Location = new System.Drawing.Point(178, 82);
+            this.txtNama.Location = new System.Drawing.Point(153, 82);
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(279, 22);
+            this.txtNama.Size = new System.Drawing.Size(304, 22);
             this.txtNama.TabIndex = 6;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(178, 110);
+            this.txtEmail.Location = new System.Drawing.Point(153, 110);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(279, 22);
+            this.txtEmail.Size = new System.Drawing.Size(304, 22);
             this.txtEmail.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(153, 137);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(304, 22);
+            this.textBox1.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNama);
             this.Controls.Add(this.txtNIM);
@@ -135,6 +144,7 @@
         private System.Windows.Forms.TextBox txtNIM;
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
