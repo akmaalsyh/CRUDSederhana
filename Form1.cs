@@ -68,9 +68,21 @@ namespace CRUDSederhana
 
         // Fungsi untuk menambahkan data (CREATE)
         private void BtnTambah(object sender, EventArgs e)
-        { 
-                    
+        {
+            try
+            {
+                if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "")
+                {
+                    MessageBox.Show("Harap isi semua data!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
         }
+
+
+
+
+
             private void label1_Click_1(object sender, EventArgs e)
         {
 
