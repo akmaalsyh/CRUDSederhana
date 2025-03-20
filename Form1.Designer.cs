@@ -36,7 +36,8 @@
             this.txtNIM = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelepon = new System.Windows.Forms.TextBox();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // NIM
@@ -106,19 +107,27 @@
             this.txtEmail.Size = new System.Drawing.Size(304, 22);
             this.txtEmail.TabIndex = 7;
             // 
-            // textBox1
+            // txtTelepon
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(304, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtTelepon.Location = new System.Drawing.Point(153, 137);
+            this.txtTelepon.Name = "txtTelepon";
+            this.txtTelepon.Size = new System.Drawing.Size(304, 22);
+            this.txtTelepon.TabIndex = 8;
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.Location = new System.Drawing.Point(153, 166);
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.Size = new System.Drawing.Size(304, 22);
+            this.txtAlamat.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAlamat);
+            this.Controls.Add(this.txtTelepon);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNama);
             this.Controls.Add(this.txtNIM);
@@ -144,7 +153,8 @@
         private System.Windows.Forms.TextBox txtNIM;
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTelepon;
+        private System.Windows.Forms.TextBox txtAlamat;
     }
 }
 
