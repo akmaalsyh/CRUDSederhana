@@ -150,5 +150,11 @@ namespace CRUDSederhana
                 MessageBox.Show("Pilih data yang akan dihapus!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        // Fungsi untuk merefresh tampilan DataGridView
+        private void BtnRefresh(object sender, EventArgs e)
+        { 
+            
+        }
     }
 }
