@@ -92,7 +92,7 @@ namespace CRUDSederhana
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
+                        LoadData();
                     }
         }
 
