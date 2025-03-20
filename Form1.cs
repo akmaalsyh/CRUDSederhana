@@ -34,6 +34,7 @@ namespace CRUDSederhana
             txtNama.Clear();
             txtEmail.Clear();
             txtTelepon.Clear();
+            txtAlamat.Clear();
         }
         private void label1_Click_1(object sender, EventArgs e)
         {
