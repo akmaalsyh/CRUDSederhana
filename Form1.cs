@@ -27,7 +27,11 @@ namespace CRUDSederhana
             LoadData();
         }
 
+        // Fungsi untuk mengosongkan semua input pada TextBox
+        private void ClearForm()
+        {
 
+        }
         private void label1_Click_1(object sender, EventArgs e)
         {
 
