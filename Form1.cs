@@ -105,5 +105,11 @@ namespace CRUDSederhana
                 MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        // Fungsi untuk menghapus data (DELETE)
+        private void BtnHapus(object sender, EventArgs e)
+        {
+
+        }
     }
 }
