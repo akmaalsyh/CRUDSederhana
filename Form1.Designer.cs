@@ -34,6 +34,7 @@
             this.Telepon = new System.Windows.Forms.Label();
             this.Alamat = new System.Windows.Forms.Label();
             this.txtNIM = new System.Windows.Forms.TextBox();
+            this.txtNama = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // NIM
@@ -86,14 +87,22 @@
             // 
             this.txtNIM.Location = new System.Drawing.Point(178, 54);
             this.txtNIM.Name = "txtNIM";
-            this.txtNIM.Size = new System.Drawing.Size(100, 22);
+            this.txtNIM.Size = new System.Drawing.Size(279, 22);
             this.txtNIM.TabIndex = 5;
+            // 
+            // txtNama
+            // 
+            this.txtNama.Location = new System.Drawing.Point(178, 82);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(279, 22);
+            this.txtNama.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtNama);
             this.Controls.Add(this.txtNIM);
             this.Controls.Add(this.Alamat);
             this.Controls.Add(this.Telepon);
@@ -115,6 +124,7 @@
         private System.Windows.Forms.Label Telepon;
         private System.Windows.Forms.Label Alamat;
         private System.Windows.Forms.TextBox txtNIM;
+        private System.Windows.Forms.TextBox txtNama;
     }
 }
 
