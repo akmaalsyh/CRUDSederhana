@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -43,7 +44,13 @@ namespace CRUDSederhana
         // Fungsi untuk menampilkan data di DataGridView
         private void LoadData()
         {
-
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                }
+            }
         }
             private void label1_Click_1(object sender, EventArgs e)
         {
