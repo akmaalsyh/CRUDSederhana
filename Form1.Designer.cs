@@ -172,6 +172,7 @@
             this.dgvMahasiswa.RowTemplate.Height = 24;
             this.dgvMahasiswa.Size = new System.Drawing.Size(563, 202);
             this.dgvMahasiswa.TabIndex = 14;
+            this.dgvMahasiswa.Click += new System.EventHandler(this.Form1_Load);
             // 
             // Form1
             // 
