@@ -39,6 +39,7 @@
             this.txtTelepon = new System.Windows.Forms.TextBox();
             this.txtAlamat = new System.Windows.Forms.TextBox();
             this.btnTambah = new System.Windows.Forms.Button();
+            this.btnHapus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NIM
@@ -131,11 +132,21 @@
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = true;
             // 
+            // btnHapus
+            // 
+            this.btnHapus.Location = new System.Drawing.Point(503, 92);
+            this.btnHapus.Name = "btnHapus";
+            this.btnHapus.Size = new System.Drawing.Size(150, 29);
+            this.btnHapus.TabIndex = 11;
+            this.btnHapus.Text = "Hapus";
+            this.btnHapus.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.txtAlamat);
             this.Controls.Add(this.txtTelepon);
@@ -167,6 +178,7 @@
         private System.Windows.Forms.TextBox txtTelepon;
         private System.Windows.Forms.TextBox txtAlamat;
         private System.Windows.Forms.Button btnTambah;
+        private System.Windows.Forms.Button btnHapus;
     }
 }
 
