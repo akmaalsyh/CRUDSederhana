@@ -30,7 +30,7 @@ namespace CRUDSederhana
         // Fungsi untuk mengosongkan semua input pada TextBox
         private void ClearForm()
         {
-
+            txtNIM.Clear();
         }
         private void label1_Click_1(object sender, EventArgs e)
         {
