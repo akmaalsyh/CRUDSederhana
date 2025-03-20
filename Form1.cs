@@ -99,14 +99,11 @@ namespace CRUDSederhana
                         MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-
-
-
-
-
-            private void label1_Click_1(object sender, EventArgs e)
-        {
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
