@@ -163,7 +163,10 @@ namespace CRUDSederhana
         // Fungsi untuk menangani klik pada sel DataGridView
         private void dgvMahasiswa_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            if (e.RowIndex >= 0)
+            {
+
+            }
         }
     }
 }
