@@ -15,15 +15,18 @@ namespace CRUDSederhana
         // Ganti "SERVER" sesuai dengan SQL Server Anda
         private string connectionString = "Data Source=AKMAL;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        // Event saat form pertama kali dimuat
+        private void Form1_Load(object sender, EventArgs e)
         {
-
+            LoadData();
         }
+
 
         private void label1_Click_1(object sender, EventArgs e)
         {
