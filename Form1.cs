@@ -40,7 +40,12 @@ namespace CRUDSederhana
             txtNIM.Focus();
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        // Fungsi untuk menampilkan data di DataGridView
+        private void LoadData()
+        {
+
+        }
+            private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
