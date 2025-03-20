@@ -28,69 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.NIM = new System.Windows.Forms.Label();
+            this.Nama = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.Label();
+            this.Telepon = new System.Windows.Forms.Label();
+            this.Alamat = new System.Windows.Forms.Label();
+            this.txtNIM = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // NIM
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NIM";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.NIM.AutoSize = true;
+            this.NIM.Location = new System.Drawing.Point(87, 54);
+            this.NIM.Name = "NIM";
+            this.NIM.Size = new System.Drawing.Size(31, 16);
+            this.NIM.TabIndex = 0;
+            this.NIM.Text = "NIM";
+            this.NIM.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // label2
+            // Nama
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(87, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nama";
+            this.Nama.AutoSize = true;
+            this.Nama.Location = new System.Drawing.Point(87, 80);
+            this.Nama.Name = "Nama";
+            this.Nama.Size = new System.Drawing.Size(44, 16);
+            this.Nama.TabIndex = 1;
+            this.Nama.Text = "Nama";
             // 
-            // label3
+            // Email
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Email";
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(87, 105);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(41, 16);
+            this.Email.TabIndex = 2;
+            this.Email.Text = "Email";
             // 
-            // label4
+            // Telepon
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(87, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Telepon";
+            this.Telepon.AutoSize = true;
+            this.Telepon.Location = new System.Drawing.Point(87, 130);
+            this.Telepon.Name = "Telepon";
+            this.Telepon.Size = new System.Drawing.Size(58, 16);
+            this.Telepon.TabIndex = 3;
+            this.Telepon.Text = "Telepon";
             // 
-            // label5
+            // Alamat
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(87, 156);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Alamat";
+            this.Alamat.AutoSize = true;
+            this.Alamat.Location = new System.Drawing.Point(87, 156);
+            this.Alamat.Name = "Alamat";
+            this.Alamat.Size = new System.Drawing.Size(49, 16);
+            this.Alamat.TabIndex = 4;
+            this.Alamat.Text = "Alamat";
+            // 
+            // txtNIM
+            // 
+            this.txtNIM.Location = new System.Drawing.Point(178, 54);
+            this.txtNIM.Name = "txtNIM";
+            this.txtNIM.Size = new System.Drawing.Size(100, 22);
+            this.txtNIM.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNIM);
+            this.Controls.Add(this.Alamat);
+            this.Controls.Add(this.Telepon);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.Nama);
+            this.Controls.Add(this.NIM);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -100,11 +109,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label NIM;
+        private System.Windows.Forms.Label Nama;
+        private System.Windows.Forms.Label Email;
+        private System.Windows.Forms.Label Telepon;
+        private System.Windows.Forms.Label Alamat;
+        private System.Windows.Forms.TextBox txtNIM;
     }
 }
 
