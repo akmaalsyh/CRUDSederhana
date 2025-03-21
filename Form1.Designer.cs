@@ -54,7 +54,6 @@
             this.NIM.Size = new System.Drawing.Size(31, 16);
             this.NIM.TabIndex = 0;
             this.NIM.Text = "NIM";
-            this.NIM.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Nama
             // 
@@ -135,6 +134,7 @@
             this.btnTambah.TabIndex = 10;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Click += new System.EventHandler(this.BtnTambah);
             // 
             // btnHapus
             // 
@@ -144,6 +144,7 @@
             this.btnHapus.TabIndex = 11;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.BtnHapus);
             // 
             // btnUbah
             // 
@@ -162,6 +163,7 @@
             this.btnRefresh.TabIndex = 13;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh);
             // 
             // dgvMahasiswa
             // 

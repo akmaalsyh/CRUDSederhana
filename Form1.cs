@@ -69,42 +69,46 @@ namespace CRUDSederhana
         // Fungsi untuk menambahkan data (CREATE)
         private void BtnTambah(object sender, EventArgs e)
         {
-            try
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "")
+                try
                 {
-                    MessageBox.Show("Harap isi semua data!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "")
+                    {
+                        MessageBox.Show("Harap isi semua data!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
 
-                conn.Open();
-                string query = "INSERT INTO Mahasiswa (NIM, Nama, Email, Telepon, Alamat) VALUES (@NIM, @Nama, @Email, @Telepon, @Alamat)";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                    conn.Open();
+                    string query = "INSERT INTO Mahasiswa (NIM, Nama, Email, Telepon, Alamat) VALUES (@NIM, @Nama, @Email, @Telepon, @Alamat)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Nama", txtNama.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadData();
+                            ClearForm(); // Auto Clear setelah tambah data
+                        }
+                        else
+                        {
+                            MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
                 {
-                    cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
-                    cmd.Parameters.AddWithValue("@Nama", txtNama.Text.Trim());
-                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
-                    cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());
-                    cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
-
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    if (rowsAffected > 0)
-                    {
-                        MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadData();
-                        ClearForm(); // Auto Clear setelah tambah data
-                    }
-                    else
-                    {
-                        MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         // Fungsi untuk menghapus data (DELETE)
         private void BtnHapus(object sender, EventArgs e)
@@ -126,6 +130,7 @@ namespace CRUDSederhana
                             {
                                 cmd.Parameters.AddWithValue("@NIM", nim);
                                 int rowsAffected = cmd.ExecuteNonQuery();
+
                                 if (rowsAffected > 0)
                                 {
                                     MessageBox.Show("Data berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -151,10 +156,12 @@ namespace CRUDSederhana
             }
         }
 
+
         // Fungsi untuk merefresh tampilan DataGridView
         private void BtnRefresh(object sender, EventArgs e)
         {
             LoadData();
+
             // ◇ Debugging: Cek jumlah kolom dan baris
             MessageBox.Show($"Jumlah Kolom: {dgvMahasiswa.ColumnCount}\nJumlah Baris: {dgvMahasiswa.RowCount}",
             "Debugging DataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
